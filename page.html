@@ -151,13 +151,13 @@
         </section>
 
         <section class="contact-section">
-            <form class="contact-form">
-                <input type="text" name="name" id="name" autocomplete="off" placeholder="name">
-                <input type="text" name="email" id="email" autocomplete="off" placeholder="email">
-                <textarea name="msg" id="msg" placeholder="message" autocomplete="off"></textarea>
+            <form class="contact-form" novalidate>
+                <input type="text" name="name" id="name" autocomplete="off" placeholder="Name" required minlength = "3" maxlength="20">
+                <input type="email" name="mail" id="mail" autocomplete="off" placeholder="Email" required minlength = "8">
+                <textarea name="msg" id="msg" placeholder="Your message" autocomplete="off" required minlength = "10"></textarea>
+                <span class="error" aria-live="polite"></span>
                 <button type="submit" class="form-submit-btn">contact</button>
             </form>
-            <!-- map -->
             <div class="map">
                 <iframe src="https://maps.google.com/maps?q=Sofia&t=&z=13&ie=UTF8&iwloc=&output=embed" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>   
